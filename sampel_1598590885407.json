@@ -1,0 +1,148 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "12122",
+    "title": "sample",
+    "x-lastModified": "2020-08-28T05:00:55.000Z",
+    "description": "added some description"
+  },
+  "paths": {
+    "/path": {
+      "put": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "add query parameter",
+            "required": false,
+            "type": "string",
+            "format": "",
+            "default": "s"
+          },
+          {
+            "name": "header",
+            "in": "header",
+            "description": "add header",
+            "required": true,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "",
+              "default": "1"
+            }
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "request body parameter",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            }
+          }
+        ],
+        "operationId": "putPath",
+        "consumes": [
+          "application/json"
+        ]
+      },
+      "patch": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          },
+          "300": {
+            "description": "infromationa;l response",
+            "headers": {
+              "header": {
+                "description": "added header parameter",
+                "type": "string",
+                "default": "1"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "multiform",
+            "in": "formData",
+            "description": "interger value for multi form data",
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 1
+          }
+        ],
+        "operationId": "patchPath",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "summary": "simple summery added and edited",
+        "description": "simple desriptioncjeck",
+        "tags": [
+          "tag1",
+          "tag3"
+        ]
+      },
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [],
+        "operationId": "postPath"
+      },
+      "delete": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [],
+        "operationId": "deletePath"
+      }
+    },
+    "/path1": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [],
+        "operationId": "postPath1"
+      }
+    }
+  },
+  "definitions": {
+    "GiveNewSchemaNameHere": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "default": "aas9s"
+        }
+      }
+    }
+  }
+}
