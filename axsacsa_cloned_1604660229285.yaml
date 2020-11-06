@@ -1,0 +1,55 @@
+swagger: '2.0'
+info:
+  version: '12'
+  title: axsacsa_cloned
+  x-lastModified: '2020-11-06T10:20:58.000Z'
+paths:
+  /pet:
+    put:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+        '300':
+          description: failed
+          schema:
+            type: string
+      parameters: []
+      operationId: putPet
+      description: cscdsaca
+      summary: xcsacs
+      tags:
+        - tag1
+    patch:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+      parameters: []
+      operationId: patchPet
+    get:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+      parameters: []
+      operationId: postPet
+    delete:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+      parameters: []
+      operationId: deletePet
+    post:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+      parameters: []
+      operationId: postPetmnk
