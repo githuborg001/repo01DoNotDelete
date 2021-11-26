@@ -1,10 +1,10 @@
 swagger: '2.0'
 info:
-  version: '1'
-  title: '!@#$%_+"??>""<<m'
-  x-lastModified: '2020-07-21T11:31:29.000Z'
+  version: '1.1'
+  title: samplecreated
+  x-lastModified: '15 November 2021 4:46:54 pm (India Standard Time)'
 paths:
-  /sa:
+  /src:
     get:
       produces:
         - application/json
@@ -12,7 +12,7 @@ paths:
         '200':
           description: Success response
       parameters: []
-      operationId: getSa
+      operationId: getSrc
     post:
       produces:
         - application/json
@@ -20,7 +20,7 @@ paths:
         '200':
           description: Success response
       parameters: []
-      operationId: postSa
+      operationId: postSrc
     put:
       produces:
         - application/json
@@ -28,4 +28,20 @@ paths:
         '200':
           description: Success response
       parameters: []
-      operationId: putSa
+      operationId: putSrc
+    patch:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+      parameters: []
+      operationId: patchSrc
+    delete:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+      parameters: []
+      operationId: deleteSrc
