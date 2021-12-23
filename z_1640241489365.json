@@ -1,0 +1,84 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1",
+    "title": "z",
+    "x-lastModified": "23 December 2021 12:06:44 pm (India Standard Time)"
+  },
+  "paths": {
+    "/as": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          },
+          "300": {
+            "description": "info",
+            "schema": {
+              "$ref": "#/definitions/asf"
+            }
+          },
+          "404": {
+            "description": "ntf"
+          }
+        },
+        "parameters": [
+          {
+            "name": "a",
+            "in": "query",
+            "description": "",
+            "required": false,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "z",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "type": "string",
+            "format": ""
+          }
+        ],
+        "operationId": "getAs",
+        "summary": "kkk",
+        "description": "llljl",
+        "tags": [
+          "a"
+        ]
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [],
+        "operationId": "postAs"
+      },
+      "patch": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [],
+        "operationId": "patchAs"
+      }
+    }
+  },
+  "definitions": {
+    "asf": {
+      "name": "asf"
+    }
+  }
+}
