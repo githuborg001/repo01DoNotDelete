@@ -1,0 +1,42 @@
+swagger: '2.0'
+info:
+  version: '1'
+  title: created
+  x-lastModified: '06 January 2022 4:41:06 pm (India Standard Time)'
+  description: sample created
+paths:
+  /ert:
+    get:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+      parameters:
+        - name: qq
+          in: query
+          description: ddvvv
+          required: false
+          type: string
+          format: ''
+          default: z
+        - name: '123'
+          in: header
+          description: dddffgv
+          required: false
+          type: string
+          format: ''
+          default: '1'
+      operationId: getErtrnm
+      summary: aAsedfg
+      description: sample
+      tags:
+        - tag1
+    post:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+      parameters: []
+      operationId: postErt
