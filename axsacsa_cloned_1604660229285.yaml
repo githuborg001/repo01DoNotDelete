@@ -1,50 +1,37 @@
 swagger: '2.0'
 info:
-  version: '12'
-  title: axsacsa_cloned
-  x-lastModified: '2020-11-06T10:20:58.000Z'
+  version: '1'
+  title: ausamplecreated
+  x-lastModified: '13 April 2022 1:19:44 pm (India Standard Time)'
 paths:
-  /pet:
-    put:
-      produces:
-        - application/json
-      responses:
-        '200':
-          description: Success response
-        '300':
-          description: failed
-          schema:
-            type: string
-      parameters: []
-      operationId: putPet
-      description: cscdsaca
-      summary: xcsacs
-      tags:
-        - tag1
-    patch:
-      produces:
-        - application/json
-      responses:
-        '200':
-          description: Success response
-      parameters: []
-      operationId: patchPet
+  /asd:
     get:
       produces:
         - application/json
+        - application/xml
       responses:
         '200':
           description: Success response
-      parameters: []
-      operationId: postPet
-    delete:
-      produces:
-        - application/json
-      responses:
-        '200':
-          description: Success response
-      parameters: []
-      operationId: deletePet
+        '400':
+          description: invalid request
+      parameters:
+        - name: a
+          in: query
+          description: dssf
+          required: false
+          type: string
+          format: ''
+          default: a
+        - name: qas
+          in: header
+          description: asad sdafevr rffd
+          required: false
+          type: string
+          format: ''
+          default: '10'
+      operationId: getAsd
+      summary: xcdgdfsfs
+      description: gfhdffdfmngbmvc  fjghfgd
     post:
       produces:
         - application/json
@@ -52,4 +39,4 @@ paths:
         '200':
           description: Success response
       parameters: []
-      operationId: postPetmnk
+      operationId: postAsd
