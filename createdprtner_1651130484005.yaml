@@ -1,0 +1,31 @@
+swagger: '2.0'
+info:
+  version: '1'
+  title: createdprtner
+  x-lastModified: '2022-04-28T06:59:42.000Z'
+paths:
+  /asd:
+    get:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+      parameters: []
+      operationId: getAsd
+    post:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+      parameters: []
+      operationId: postAsd
+    patch:
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Success response
+      parameters: []
+      operationId: patchAsd
